@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a37f24e2-d086-430f-aab5-9cfbf6f5252f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>_0304drawDigital.py</StartupFile>
+    <StartupFile>hanoi.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>0304drawDigital</Name>
     <RootNamespace>0304drawDigital</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="_0304drawDigital.py" />
+    <Compile Include="hanoi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="snowpack.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="0304drawDigital.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
